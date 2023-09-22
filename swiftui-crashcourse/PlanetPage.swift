@@ -8,13 +8,39 @@
 import SwiftUI
 
 struct PlanetPage: View {
+    var data: Dictionary<String,String>
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        AsyncImage(url: URL(string: data["image"] ?? "")) { image in
+            image
+                .resizable()
+                .scaledToFit()
+        } placeholder: {
+            
+        }
+        Text(data["name"] ?? "")
+            .font(.largeTitle)
+            .fontWeight(.bold)
+        HStack {
+            Text(data["position"] ?? "")
+                .font(.system(size: 32))
+            Spacer()
+            Text(data["distance"] ?? "")
+                .font(.system(size: 32))
+            Spacer()
+            Text(data["velocity"] ?? "")
+                .font(.system(size: 32))
+        }.padding(40)
+        Spacer()
+        Text(data["description"] ?? "")
+            .padding()
+        Spacer()
+        
     }
 }
 
 struct PlanetPage_Previews: PreviewProvider {
     static var previews: some View {
-        PlanetPage()
+        PlanetPage(data: ["": ""])
     }
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F22C1C92ABC84C3004CCD66 /* PlanetsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F22C1C82ABC84C3004CCD66 /* PlanetsData.swift */; };
+		7F22C1CC2ABC8D7C004CCD66 /* PlanetPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F22C1CB2ABC8D7C004CCD66 /* PlanetPage.swift */; };
 		7F8E801B2AB9D01A0001067C /* swiftui_crashcourseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8E801A2AB9D01A0001067C /* swiftui_crashcourseApp.swift */; };
 		7F8E801D2AB9D01A0001067C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8E801C2AB9D01A0001067C /* ContentView.swift */; };
 		7F8E801F2AB9D01B0001067C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F8E801E2AB9D01B0001067C /* Assets.xcassets */; };
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F22C1C82ABC84C3004CCD66 /* PlanetsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsData.swift; sourceTree = "<group>"; };
+		7F22C1CA2ABC894D004CCD66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7F22C1CB2ABC8D7C004CCD66 /* PlanetPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetPage.swift; sourceTree = "<group>"; };
 		7F8E80172AB9D01A0001067C /* swiftui-crashcourse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-crashcourse.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F8E801A2AB9D01A0001067C /* swiftui_crashcourseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_crashcourseApp.swift; sourceTree = "<group>"; };
 		7F8E801C2AB9D01A0001067C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,10 +99,13 @@
 		7F8E80192AB9D01A0001067C /* swiftui-crashcourse */ = {
 			isa = PBXGroup;
 			children = (
+				7F22C1CA2ABC894D004CCD66 /* Info.plist */,
 				7F8E801A2AB9D01A0001067C /* swiftui_crashcourseApp.swift */,
 				7F8E801C2AB9D01A0001067C /* ContentView.swift */,
 				7F8E801E2AB9D01B0001067C /* Assets.xcassets */,
 				7F8E80202AB9D01B0001067C /* Preview Content */,
+				7F22C1C82ABC84C3004CCD66 /* PlanetsData.swift */,
+				7F22C1CB2ABC8D7C004CCD66 /* PlanetPage.swift */,
 			);
 			path = "swiftui-crashcourse";
 			sourceTree = "<group>";
@@ -257,7 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F22C1CC2ABC8D7C004CCD66 /* PlanetPage.swift in Sources */,
 				7F8E801D2AB9D01A0001067C /* ContentView.swift in Sources */,
+				7F22C1C92ABC84C3004CCD66 /* PlanetsData.swift in Sources */,
 				7F8E801B2AB9D01A0001067C /* swiftui_crashcourseApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +430,7 @@
 				DEVELOPMENT_TEAM = JTJDA797DZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "swiftui-crashcourse/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +460,7 @@
 				DEVELOPMENT_TEAM = JTJDA797DZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "swiftui-crashcourse/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

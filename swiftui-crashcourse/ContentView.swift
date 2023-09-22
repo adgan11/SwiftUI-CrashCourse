@@ -8,14 +8,33 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    var planetsData = PlanetsData()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationStack {
+            ScrollView {
+                VStack {
+                    ForEach(planetsData.data, id: \.self) { data in
+                        AsyncImage(url: URL(string: data["image"] ?? "name")) { image in
+                            image
+                                .resizable()
+                                .scaledToFit()
+                        } placeholder: {
+                            
+                        }
+                        
+                        Text(data["name"] ?? "image")
+                            .font(.largeTitle)
+                            .fontWeight(.bold)
+                        
+                        NavigationLink(destination: PlanetPage(data: data)) {
+                            Text("Learn More")
+                        }
+                    }
+                }.navigationTitle("Planets")
+            }
         }
-        .padding()
     }
 }
 
